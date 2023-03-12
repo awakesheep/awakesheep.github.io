@@ -1,0 +1,14 @@
+/* 页脚蝴蝶振翅动画 */
+
+.copyright svg {
+    animation: butterfly 4s linear infinite alternate;
+}
+
+@keyframes butterfly {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

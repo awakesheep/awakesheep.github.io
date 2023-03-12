@@ -1,0 +1,435 @@
+/*iconfont默认样式*/
+
+svg.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+html {
+    --light-color-define: rgba(255, 255, 255, 0.5);
+    --light-bgcolor-define: rgba(255, 255, 255, 0.2);
+    --dark-color-define: rgba(45, 45, 45, 0.6);
+    --dark-bgcolor-define: rgba(60, 60, 60, 0.3);
+    /*透明色*/
+    --light-bgcolor-trans: rgba(255, 255, 255, 0);
+    --dark-bgcolor-trans: rgba(0, 0, 0, 0);
+}
+
+
+/* 滚动条样式设置 */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 2em;
+}
+
+ ::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+ ::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+}
+
+
+/*白天模式背景颜色及透明度调整*/
+
+
+/* 页脚及头图透明，先将页头和页脚设置透明，再设置整个page夜色及透明度 */
+
+[data-theme="light"] #footer {
+    background: var(--light-bgcolor-trans)!important;
+}
+
+[data-theme="light"] #page-header {
+    background: var(--light-bgcolor-trans)!important;
+}
+
+[data-theme="light"] #web_bg {
+    filter: brightness(1.0)!important;
+}
+
+[data-theme="light"] #article-container {
+    background: var(--light-bgcolor-define) !important;
+}
+
+[data-theme="light"] #content-inner {
+    background: var(--light-bgcolor-define) !important;
+}
+
+[data-theme="light"] .post-bg:before {
+    background-color: var(--light-bgcolor-trans)!important;
+}
+
+
+/* 首页文章卡片 */
+
+[data-theme="light"] #recent-posts>.recent-post-item {
+    background: var(--light-color-define) !important;
+}
+
+
+/* 文章页面正文背景 */
+
+[data-theme="light"] div#post {
+    background: var(--light-color-define) !important;
+}
+
+
+/* 分页页面 */
+
+[data-theme="light"] div#page {
+    background: var(--light-color-define) !important;
+}
+
+
+/* 归档页面 */
+
+[data-theme="light"] div#archive {
+    background: var(--light-color-define) !important;
+}
+
+
+/* 标签页面 */
+
+[data-theme="light"] div#tag {
+    background: var(--light-color-define) !important;
+}
+
+
+/* 分类页面 */
+
+[data-theme="light"] div#category {
+    background: var(--light-color-define) !important;
+}
+
+
+/* 首页侧栏卡片 */
+
+[data-theme="light"] .card-widget {
+    background: var(--light-color-define) !important;
+}
+
+
+/*白天模式文章标题颜色*/
+
+[data-theme="light"] #article-container.post-content h1 {
+    color: #1f2d3d !important;
+}
+
+[data-theme="light"] #article-container.post-content h2 {
+    color: #1f2d3d !important;
+}
+
+[data-theme="light"] #article-container.post-content h3 {
+    color: #1f2d3d !important;
+}
+
+[data-theme="light"] #article-container.post-content h4 {
+    color: #1f2d3d !important;
+}
+
+[data-theme="light"] #article-container.post-content h5 {
+    color: #1f2d3d !important;
+}
+
+[data-theme="light"] #article-container.post-content h6 {
+    color: #1f2d3d !important;
+}
+
+
+/*白天模式文章页标题颜色*/
+
+[data-theme="light"]#post-info .post-title {
+    color: #f4f5f7 !important;
+}
+
+
+/*夜间模式背景颜色及透明度调整*/
+
+
+/*夜间模式伪类遮罩层透明*/
+
+[data-theme="dark"] #footer {
+    background: var(--dark-bgcolor-trans) !important;
+}
+
+[data-theme="dark"] #page-header {
+    background: var(--dark-bgcolor-trans) !important;
+}
+
+[data-theme="dark"] #web_bg {
+    filter: brightness(0.55)!important;
+}
+
+[data-theme="dark"] #content-inner {
+    background: var(--dark-bgcolor-define) !important;
+}
+
+[data-theme="dark"] #page {
+    background-color: var(--dark-bgcolor-define) !important;
+}
+
+[data-theme="dark"] .post-bg:before {
+    background-color: var(--dark-bgcolor-trans)!important;
+}
+
+
+/* 首页文章卡片 */
+
+[data-theme="dark"] div.recent-post-item {
+    background: var(--dark-color-define) !important;
+}
+
+
+/* 首页侧边最新文章 */
+
+[data-theme="dark"] #aside-content .card-widget {
+    background: var(--dark-color-define) !important;
+}
+
+
+/* 文章页面正文背景 */
+
+[data-theme="dark"] div#post {
+    background: var(--dark-color-define) !important;
+}
+
+
+/* 分页页面 */
+
+[data-theme="dark"] div#page {
+    background: var(--dark-color-define) !important;
+}
+
+
+/* 归档页面 */
+
+[data-theme="dark"] div#archive {
+    background: var(--dark-color-define) !important;
+}
+
+
+/* 标签页面 */
+
+[data-theme="dark"] div#tag {
+    background: var(--dark-color-define) !important;
+}
+
+
+/* 分类页面 */
+
+[data-theme="dark"] div#category {
+    background: var(--dark-color-define) !important;
+}
+
+
+/*夜间模式顶部标题栏*/
+
+[data-theme="dark"] .nav-fixed #nav {
+    background: var(--dark-color-define) !important;
+}
+
+
+/*主页文章标题颜色*/
+
+[data-theme="dark"] div#recent-posts>.recent-post-item>.recent-post-info>.article-title {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+/*主页文章标签等数目颜色*/
+
+[data-theme="dark"] div#aside-content .card-info .card-info-data>.card-info-data-item a .length-num {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+/*夜间模式文章标题颜色*/
+
+[data-theme="dark"] h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #f4f5f7 !important;
+}
+
+
+/*夜间模式目录数字颜色*/
+
+[data-theme="dark"] #aside-content #card-toc .toc-content .toc-link {
+    color: #babdc1 !important;
+}
+
+
+/*夜间模式文章页侧边栏文字颜色及背景修改*/
+
+[data-theme="dark"] #aside-content #card-toc .toc-content .toc-link.active {
+    border-left-color: rgb(255 255 255 / 70%);
+    background: #4c4948;
+}
+
+
+/*夜间模式顶部子链背景*/
+
+[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child {
+    background: var(--dark-color-define) !important;
+}
+
+
+/*手机夜间侧边栏适配*/
+
+[data-theme="dark"] #sidebar #sidebar-menus {
+    background: var(--dark-color-define) !important;
+}
+
+
+/*手机夜间模式文章等数字颜色调整*/
+
+[data-theme="dark"] #sidebar #sidebar-menus .site-data .data-item .data-item-link .length-num {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+/*阅读模式颜色及透明度修改*/
+
+
+/*阅读模式*/
+
+.read-mode #aside-content .card-widget {
+    background: rgba(158, 204, 171, 0.5) !important;
+}
+
+.read-mode div#post {
+    background: rgba(158, 204, 171, 0.5) !important;
+}
+
+
+/*夜间阅读模式*/
+
+[data-theme="dark"] .read-mode #aside-content .card-widget {
+    background: var(--dark-color-define) !important;
+    color: #eeeeee;
+}
+
+[data-theme="dark"] .read-mode div#post {
+    background: var(--dark-color-define) !important;
+    color: #eeeeee;
+}
+
+
+/*首页哔哔栏白天/夜间适配*/
+
+[data-theme="light"] #bbTimeList {
+    background: var(--light-color-define) !important;
+}
+
+[data-theme="dark"] #bbTimeList {
+    background: var(--dark-color-define) !important;
+}
+
+
+/*右侧选项栏白天/夜间适配*/
+
+[data-theme="dark"] #rightside>div>button {
+    display: block;
+    margin-bottom: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    color: var(--btn-color);
+    text-align: center;
+    font-size: 16px;
+}
+
+[data-theme="dark"] #rightside>div>a {
+    display: block;
+    margin-bottom: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    color: var(--btn-color);
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*主页滚动置顶白天/夜间适配*/
+
+[data-theme="light"] .swiper {
+    background: var(--light-color-define);
+}
+
+[data-theme="light"] .blog-slider__code {
+    font-size: 18px;
+}
+
+[data-theme="light"] .blog-slider__title {
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+[data-theme="light"] .blog-slider__text {
+    font-size: 15px;
+}
+
+[data-theme="dark"] .swiper {
+    background: var(--dark-color-define);
+}
+
+[data-theme="dark"] .blog-slider__code {
+    font-size: 18px;
+}
+
+[data-theme="dark"] .blog-slider__title {
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+[data-theme="dark"] .blog-slider__text {
+    font-size: 15px;
+}
+
+[data-theme="dark"] #swiper_container {
+    background: var(--dark-bgcolor-trans)!important;
+}
+
+@font-face {
+    /* 字体名自定义即可 */
+    font-family: 'MiSans';
+    /* 字体文件路径 */
+    src: url('/fonts/misans/MiSans-Regular.ttf');
+    font-display: swap;
+}
+
+
+/*天气插件位置适配*/
+
+#he-plugin-simple {
+    left: 205px !important;
+    top: 10px !important;
+}
+
+@media screen and (max-width:450px) {
+    #he-plugin-simple[data-v-41ba7e2c] {
+        left: 175px !important;
+        top: 10px !important;
+    }
+}
